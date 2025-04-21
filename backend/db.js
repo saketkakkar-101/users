@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mongouri = 
+const mongouri =
 
 const mongodb = async(req,res) => {
     try {
@@ -8,7 +8,7 @@ const mongodb = async(req,res) => {
 
         const fetchedData = mongoose.connection.db.collection("users")
         const data = await fetchedData.find({}).toArray();
-         console.log(data);
+        //  console.log(data);
     } catch (error) {
         console.log(error);
     }
